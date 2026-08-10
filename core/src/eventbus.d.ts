@@ -11,6 +11,8 @@ declare module '@nextcloud/event-bus' {
 		'nextcloud:unified-search:reset': undefined
 		'nextcloud:unified-search:search': { query: string }
 		'nextcloud:app-menu.refresh': { apps: INavigationEntry[] }
+		/** Id of the activated navigation action that has no `href` to navigate to */
+		'core:navigation-action:clicked': string
 	}
 }
 
