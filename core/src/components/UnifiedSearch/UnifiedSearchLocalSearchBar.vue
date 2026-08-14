@@ -162,7 +162,8 @@ function clearAndCloseSearch() {
 		inset-inline: 0;
 	}
 	// Hide all other entries, especially the user menu as it might leak pixels
-	:global(.header-end:has(.local-unified-search--open) > :not(.unified-search-menu)) {
+	:global(.header-end:has(.local-unified-search--open) > :not(.unified-search-menu)),
+	:global(.header-end:has(.local-unified-search--open) .header-end__item:not(:has(.local-unified-search--open))) {
 		display: none;
 	}
 }
